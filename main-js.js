@@ -1,4 +1,4 @@
-let timer = 20
+let timer = 19
 const elTimer = document.querySelector('.timer')
 const elBtn = document.querySelector('button')
 let timerInt;
