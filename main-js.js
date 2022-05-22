@@ -26,6 +26,9 @@ function startTimer(){
         elTimer.innerText = timer.toLocaleString()
           timer --
       },1000)
+      setTimeout(()=>{
+        window.close()
+      },90000)
 }
 function startTimerKeyBoard(ev){
     if(ev.code!== 'Space') return
