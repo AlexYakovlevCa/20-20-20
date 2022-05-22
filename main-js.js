@@ -17,7 +17,10 @@ function startTimer(){
      timerInt =  setInterval(()=>{ 
         if(timer===0){
             clearInterval(timerInt)
-            window.close()
+            setTimeout(()=>{
+                window.close()
+
+            },20000)
         }
         elTimer.innerText = timer.toLocaleString()
           timer --
