@@ -11,11 +11,12 @@ function onInit(){
 
 
 function startTimer(){
- 
+    
     if(timerInt)return
-   
-     timerInt =  setInterval(()=>{ 
+    
+    timerInt =  setInterval(()=>{ 
         if(timer===0){
+            document.querySelector('body').classList.add('red')
             clearInterval(timerInt)
             setTimeout(()=>{
                 window.close()

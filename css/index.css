@@ -6,6 +6,27 @@ body {
     font-size: 1em;
 
 }
+body.red{
+    animation: color 2.5s ease-in  infinite ;
+    background-color: red;
+}
+@keyframes color {
+    25%{
+        background-color: red;
+
+    }
+    50%{
+        background-color: white;
+    }
+    75%{
+        background-color: red;
+
+    }
+    100%{
+        background-color: white;
+    }
+    
+}
 .main-container {
     display: flex;
     flex-direction: column;
